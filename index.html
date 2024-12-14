@@ -1,0 +1,106 @@
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>nameless</title>
+        <link rel = "icon" type = "image/png" sizes = "32x32" href = "">
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body id = "hero-section">
+        <header>
+            <div class = "logo-container">
+                <a href = "#hero-section">
+                    <img src = "assets/Nameless-logo.png" height = 40px>                    
+                </a>
+            </div>
+            <div class = "navigation-buttons">
+                <a href = "#hero-section">
+                    <button class = "home-button">HOME</button>
+                </a>
+                <a href = "loading.html">
+                    <button class = "shop-button">SHOP</button>
+                </a>
+                <a href = "#about-section">
+                    <button class = "about-button">ABOUT</button>
+                </a>
+                <a href = "loading.html">
+                    <button class = "promo-button">PROMO</button>
+                </a>
+            </div>
+            <div class = "login-button-container">
+                <a href = "loading.html">
+                    <button class = "login-button">LOGIN</button>
+                </a>
+            </div>
+        </header>
+        <div class = "hero-section">
+            <div class = "main-content">
+                <div class = "main-text">Find your style.</div>
+                <div class = "flavor-text">Unveil the perfect blend of trend and timelessness.</div>
+                <div class = "discover-button-container">
+                    <a href = "#recommendation-section">
+                        <button class = "discover-button">DISCOVER</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id = "recommendation-section" class = "recommendation-section">
+            <div class = "recommendation-header">WE RECOMMEND</div>
+            <div class = "products-list">
+                <div class = "product">
+                    <div class ="product-content">
+                        <div class = "product-image"><img src = "assets/product1.png" height = 450 width = 302></div>
+                        <div class = "details-and-button-container">
+                            <div class = "name-price-container">                        
+                                <div class = "product-name">Textured Polo</div>   
+                                <div class = "product-price">$19.99</div>                  
+                            </div>                        
+                            <div class = "cart-button-container">
+                                <button class = "cart-button" onclick="addToCart()"><img src = "assets/cart.png" height = 32 width = 32></button>
+                            </div>             
+                        </div>
+                    </div>
+                </div>
+                <div class = "product">
+                    <div class = "product-content">                    
+                        <div class = "product-image"><img src = "assets/product2.png" height = 450 width = 302></div>
+                        <div class = "details-and-button-container">
+                            <div class = "name-price-container">                        
+                                <div class = "product-name">Oversized T-Shirt</div>   
+                                <div class = "product-price">$9.99</div>                  
+                            </div>                        
+                            <div class = "cart-button-container">
+                                <button class = "cart-button" onclick="addToCart()"><img src = "assets/cart.png" height = 32 width = 32></button>
+                            </div>            
+                        </div>                        
+                    </div>
+                </div>
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-image"><img src = "assets/product3.png" height = 450 width = 302></div>
+                        <div class = "details-and-button-container">
+                            <div class = "name-price-container">                        
+                                <div class = "product-name">Long Sleeve Polo Shirt</div>   
+                                <div class = "product-price">$29.99</div>                  
+                            </div>                        
+                            <div class = "cart-button-container">
+                                <button class = "cart-button" onclick="addToCart()"><img src = "assets/cart.png" height = 32 width = 32></button>
+                            </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message-box" class="message-box">Product has been added to the cart</div>
+        <div id = "about-section" class = "about-section">
+            <div class = "about-content">
+                <div class = "about-text">
+                    <div class = "about-us">About us</div>
+                    <div class = "more-about-us">Welcome to nameless, where simplicity meets sophistication. We believe that less is more—our designs celebrate clean lines, neutral tones, and versatile pieces that can seamlessly fit into any wardrobe. </div>
+                </div>
+                <div class = "about-image"><img src = "assets/about-image.png" width = 350 height = 500></div>                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
