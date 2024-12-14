@@ -17,7 +17,7 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+.main-body{
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
@@ -260,7 +260,7 @@ header{
 
 .about-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--background-color);
     border-bottom: 2px solid var(--primary-color);
     justify-content: center;
@@ -304,4 +304,69 @@ header{
     display: flex;
     justify-content: center;
     height: 500px;
+}
+
+.nameless-footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    font-size: 12px;
+    color: black;
+    opacity: 75%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.under-construction-body{
+    margin: 0;
+    gap: 0px;
+    overflow-y: hidden;
+}
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/under-construction.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px); 
+    z-index: -1; 
+}
+
+.under-construction-section {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.45); 
+    height: auto;
+    width: 80%; 
+    max-width: 1400px;
+    z-index: 1;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.under-construction-text, .under-construction-message{
+    font-family: var(--secondary-font);
+}
+
+.under-construction-text{
+    font-weight: 800;
+    font-size: 3.5em;
+}
+
+.under-construction-message {
+    display: flex;
+    width: 700px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
 }
